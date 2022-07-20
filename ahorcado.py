@@ -3,11 +3,11 @@ import  random
 import os
         
         
-juego =input("bienvenido al ahorcado \nSelecciona el juego dentro de las siguientes opciones: \n1-Animales\n2-comidas\n3-lenguajes de programacion\n4-colores \n")
+juego =input("bienvenido al ahorcado \nSelecciona el juego dentro de las siguientes opciones: \n1-Animales\n2-comidas\n3-lenguajes de programacion\n4-colores \n5-ALEATORIO\n")
 
 
 def col():
-    
+    print ("ahorcado de colores")
     IMAGES = ['''
   +---+
   |   |
@@ -73,7 +73,7 @@ def col():
         for character in spaces:
             print(character, end=" ")
         print(IMAGES[attemps])
-        letter = input("elije una letra:   \n").upper()
+        letter = input("colores\nElije una letra:   \n").upper()
         
         found = False
         for idx,character in enumerate(word):
@@ -97,8 +97,8 @@ def col():
             break
 
 def comi():
-    
-    IMAGES = ['''
+    print ("ahorcado de comidas")
+    IMAGES = ["ahorcado de comida"'''
   +---+
   |   |
   O   |
@@ -164,7 +164,7 @@ def comi():
         for character in spaces:
             print(character, end=" ")
         print(IMAGES[attemps])
-        letter = input("elije una letra:   \n").upper()
+        letter = input("comidas\nElije una letra:   \n").upper()
         
         found = False
         for idx,character in enumerate(word):
@@ -188,8 +188,8 @@ def comi():
             break
 
 def anim():
-    
-    IMAGES = ['''
+    print ("ahorcado de animales")
+    IMAGES = ["ahorcado de animales"'''
   +---+
   |   |
   O   |
@@ -242,10 +242,24 @@ def anim():
 
     DB=[
         "PERRO",
+        "ELEFANTE",
+        "JIRAFA",
+        "RINOCERONTE",
+        "LORO",
+        "HIPOPOTAMO",
+        "HIENA",
+        "CONEJO",
+        "TIGRE",
+        "DODO"
         "GATO",
        "PAJARO",
        "PEZ",
        "LEON",
+       "BALLENA",
+       "PUMA",
+       "MONO",
+       ""
+       
     ]
     word= random.choice(DB)
     spaces=["_"]*len(word)
@@ -255,7 +269,7 @@ def anim():
         for character in spaces:
             print(character, end=" ")
         print(IMAGES[attemps])
-        letter = input("elije una letra:   \n").upper()
+        letter = input("animales\nElije una letra:   \n").upper()
         
         found = False
         for idx,character in enumerate(word):
@@ -279,7 +293,7 @@ def anim():
             break
 
 def leng():
-    
+    print ("ahorcado de lenguajes de programacion")
     IMAGES = ['''
   +---+
   |   |
@@ -346,7 +360,7 @@ def leng():
         for character in spaces:
             print(character, end=" ")
         print(IMAGES[attemps])
-        letter = input("elije una letra:   \n").upper()
+        letter = input("lenguajes de programacion\nElije una letra:   \n").upper()
         
         found = False
         for idx,character in enumerate(word):
@@ -371,7 +385,12 @@ def leng():
         
     
          
-            
+XD=["1",
+     "2",
+     "3",
+     "4"]     
+if juego == "5":
+    juego=random.choice(XD)         
 if juego == "1":
     anim()
 if juego == "2":
