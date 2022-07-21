@@ -1,11 +1,13 @@
-
+from tkinter import*
+from unittest import result
 import random
 import os
 import time
+
 reset=""
 numeros=["5","4","3","2","1"]
 def game():
-    juego =input("bienvenido al ahorcado \nSelecciona el juego dentro de las siguientes opciones: \n1-Animales\n2-comidas\n3-lenguajes de programacion\n4-colores \n5-ALEATORIO\n")
+    juego =input("bienvenido al ahorcado \nSelecciona el juego dentro de las siguientes opciones: \n1-Animales\n2-comidas\n3-lenguajes de programacion\n4-colores \n5 o enter-ALEATORIO\n")
 
 
 
@@ -61,12 +63,17 @@ def game():
              |
         =========''']
 
-        DB=[
-        "AZUL",
-        "ROJO",
-       "VERDE",
-       "AMARILLO",
-        "VIOLETA"    ]
+        DB=["NEGRO",
+            "AZUL",
+            "MARRON",
+            "GRIS",
+            "VERDE",
+            "NARANJA",
+            "ROSA",
+            "PURPURA",
+            "ROJO",
+            "BLANCO",
+            "AMARILLO"]
         word= random.choice(DB)
         spaces=["_"]*len(word)
         attemps=6
@@ -98,7 +105,7 @@ def game():
                 
                 print ("Perdiste  govir")
                 for n in numeros:
-                    print ("Perdiste reinicia el juego en "+n)
+                    print ("Perdiste "+ "la palabra era ",word + " reinicia el juego en "+n)
                     time.sleep(1)
                     os.system("cls")
                 game()
@@ -210,11 +217,10 @@ def game():
                 
                 print ("Perdiste  govir")
                 for n in numeros:
-                    print ("Perdiste reinicia el juego en "+n)
+                    print ("Perdiste "+ "la palabra era ",word + " reinicia el juego en "+n)
                     time.sleep(1)
                     os.system("cls")
                 game()
-
     def anim():
         IMAGES = ['''
      +---+
@@ -285,7 +291,6 @@ def game():
             "BALLENA",
             "PUMA",
             "MONO",
-            ""
         
         ]
         word= random.choice(DB)
@@ -319,7 +324,7 @@ def game():
                 
                 print ("Perdiste  govir")
                 for n in numeros:
-                    print ("Perdiste reinicia el juego en "+n)
+                    print ("Perdiste "+ "la palabra era ",word + " reinicia el juego en "+n)
                     time.sleep(1)
                     os.system("cls")
                 game()
@@ -414,7 +419,7 @@ def game():
                 
                 print ("Perdiste  govir")
                 for n in numeros:
-                    print ("Perdiste reinicia el juego en "+n)
+                    print ("Perdiste "+ "la palabra era ",word + " reinicia el juego en "+n)
                     time.sleep(1)
                     os.system("cls")
                 game()
@@ -425,10 +430,11 @@ def game():
         "2",
         "3",
         "4"]  
-    if reset =="r":
-        game()
+    
     if juego == "5":
-        juego=random.choice(XD)   
+        juego=random.choice(XD)  
+    if juego == "":
+        juego=random.choice(XD) 
             
     if juego == "1":
         anim()
@@ -443,3 +449,5 @@ def game():
         col()
 
 game()
+
+
