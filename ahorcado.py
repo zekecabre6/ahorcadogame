@@ -95,6 +95,7 @@ Te queda un ultimo intento!
                 attemps-=1
             if "_" not in spaces:
                 print ("GANASTE! LA PALABRA ERA: "+ word)
+                time.sleep(2)
                 for n in numeros:
                     print ("reinicia el juego en "+n)
                     time.sleep(1)
@@ -106,6 +107,7 @@ Te queda un ultimo intento!
             if attemps == 0:
                 
                 print ("Perdiste  govir")
+                time.sleep(2)
                 for n in numeros:
                     print ("Perdiste "+ "la palabra era ",word + " reinicia el juego en "+n)
                     time.sleep(1)
@@ -209,6 +211,7 @@ Te queda un ultimo intento!
                 attemps-=1
             if "_" not in spaces:
                 print ("GANASTE! LA PALABRA ERA: "+ word)
+                time.sleep(2)
                 for n in numeros:
                     print ("reinicia el juego en "+n)
                     time.sleep(1)
@@ -220,6 +223,7 @@ Te queda un ultimo intento!
             if attemps == 0:
                 
                 print ("Perdiste  govir")
+                time.sleep(2)
                 for n in numeros:
                     print ("Perdiste "+ "la palabra era ",word + " reinicia el juego en "+n)
                     time.sleep(1)
@@ -318,6 +322,7 @@ Te queda un ultimo intento!
                 attemps-=1
             if "_" not in spaces:
                 print ("GANASTE! LA PALABRA ERA: "+ word)
+                time.sleep(2)
                 for n in numeros:
                     print ("reinicia el juego en "+n)
                     time.sleep(1)
@@ -329,6 +334,7 @@ Te queda un ultimo intento!
             if attemps == 0:
                 
                 print ("Perdiste  govir")
+                time.sleep(2)
                 for n in numeros:
                     print ("Perdiste "+ "la palabra era ",word + " reinicia el juego en "+n)
                     time.sleep(1)
@@ -414,6 +420,7 @@ Te queda un ultimo intento!
                 attemps-=1
             if "_" not in spaces:
                 print ("GANASTE! LA PALABRA ERA: "+ word)
+                time.sleep(2)
                 for n in numeros:
                     print ("reinicia el juego en "+n)
                     time.sleep(1)
@@ -425,6 +432,7 @@ Te queda un ultimo intento!
             if attemps == 0:
                 
                 print ("Perdiste  govir")
+                time.sleep(2)
                 for n in numeros:
                     print ("Perdiste "+ "la palabra era ",word + " reinicia el juego en "+n)
                     time.sleep(1)
