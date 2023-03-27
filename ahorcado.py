@@ -39,7 +39,7 @@ Te queda un ultimo intento!
         +---+
         |   |
         O   |
-        /|   |
+        /|  |
             |
             |
         =========''', '''
@@ -144,7 +144,7 @@ Te queda un ultimo intento!
         +---+
         |   |
         O   |
-        /|   |
+        /|  |
             |
             |
         =========''', '''
