@@ -106,7 +106,7 @@ Te queda un ultimo intento!
                 
             if attemps == 0:
                 
-                print ("Perdiste  govir")
+                print ("Perdiste  :( )")
                 time.sleep(2)
                 for n in numeros:
                     print ("Perdiste "+ "la palabra era ",word + " reinicia el juego en "+n)
@@ -257,7 +257,7 @@ Te queda un ultimo intento!
         +---+
         |   |
         O   |
-        /|   |
+        /|  |
             |
             |
         =========''', '''
@@ -368,7 +368,7 @@ Te queda un ultimo intento!
         +---+
         |   |
         O   |
-        /|   |
+        /|  |
             |
             |
         =========''', '''
